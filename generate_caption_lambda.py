@@ -7,9 +7,8 @@ import os
 import base64 # For converting image from URL to base64 for Gemini if needed
 import uuid # For temporary file names
 
-# Initialize Gemini API (API key will be retrieved from Secrets Manager)
-# This will be configured at runtime
-# genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 # Initialize the Gemini model
 model = genai.GenerativeModel('gemini-1.5-flash')
