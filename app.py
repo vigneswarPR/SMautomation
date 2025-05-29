@@ -9,16 +9,16 @@ import calendar # NEW: For month and year selection
 
 # --- API Endpoints (REPLACE WITH YOUR ACTUAL API GATEWAY ENDPOINTS) ---
 # Existing Image Endpoints
-UPLOAD_IMAGE_API_URL = "YOUR_API_GATEWAY_URL/upload-image"
-GENERATE_CAPTION_API_URL = "YOUR_API_GATEWAY_URL/generate-caption"  # For images
+UPLOAD_IMAGE_API_URL = "https://l63kkw2lv5.execute-api.ap-southeast-2.amazonaws.com/prod/upload_image_lambda"
+GENERATE_CAPTION_API_URL = "https://r7frxw7h53.execute-api.ap-southeast-2.amazonaws.com/prod/generate_caption_lambda"  # For images
 
 # NEW Video Endpoints (assuming you might have separate Lambda for video upload)
 UPLOAD_VIDEO_API_URL = "YOUR_API_GATEWAY_URL/upload-video" # Make sure this points to your GCS-aware video upload lambda
 GENERATE_VIDEO_CAPTION_API_URL = "YOUR_API_GATEWAY_URL/generate-video-caption"
 
 # Common Scheduling and Listing Endpoints
-SCHEDULE_POST_API_URL = "YOUR_API_GATEWAY_URL/schedule-post"
-GET_SCHEDULED_POSTS_API_URL = "YOUR_API_GATEWAY_URL/get-scheduled-posts"
+SCHEDULE_POST_API_URL = "https://dr0po98y5a.execute-api.ap-southeast-2.amazonaws.com/prod/schedule_post_lambda"
+GET_SCHEDULED_POSTS_API_URL = "https://u9m9l59p9k.execute-api.ap-southeast-2.amazonaws.com/prod/get_schedule_post_lambda"
 
 # NEW: Calendar Generation Endpoint
 GENERATE_CALENDAR_API_URL = "YOUR_API_GATEWAY_URL/generate-calendar" # You'll define this later
